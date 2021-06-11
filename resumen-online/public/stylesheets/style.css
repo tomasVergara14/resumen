@@ -92,6 +92,10 @@ a {
   background-color: rgb(180, 178, 178);
   border-radius: 2%;
 }
+.example pre{
+  margin-bottom: 10%;
+  font-size: 1.5em;
+}
 .example p{
   margin-bottom: 10%;
 }

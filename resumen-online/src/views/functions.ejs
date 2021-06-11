@@ -4,45 +4,116 @@
 <%- include('./partials/header') %>
 <body>
 
-    <div class="text">
-        <h2>Functions</h2>
-        <p>Functions in JS are declare using the keyword "function", this creates an object that posses all the properties, methods and behaviors of this. By default, functions return "undefined", if we want a different result, we should use the keyword "return"  follow by the value that we want to asign it</p>
-        <p>Example: </p>
-    </div>
-    <div class="example">
-        
-        <p class="comment">//we use the keyword "function" to initialize the object function and we pass or not, one or more arguments</p>
-        <p>function greetings(name) {</p>
-        <p class="comment">//Prints the greeting adding the variable "name"</p>
-        <p> console.log("hello, " + name)</p>
-        <p class="lastline">}</p>
-
-        <form class="example-form" action="">
-            <input type="text" placeholder="input: ">
-            <button type="submit">Submit</button>
-        </form>
-        <div class="answer-box">
-            <p class="answer" id="answer"></p>
+    <div class="container1">
+        <div class="text">
+            <h2>Functions</h2>
+            <p>Functions in JS are declare using the keyword "function", this creates an object that posses all the properties, methods and behaviors of this. By default, functions return "undefined", if we want a different result, we should use the keyword "return"  follow by the value that we want to asign it</p>
+            <p>Example: </p>
         </div>
-        
-    </div>
-    <div class="example">
-        
-        <p class="comment">//we use the keyword "function" to initialize the object function and we pass or not, one or more arguments</p>
-        <p>function sum(a,b) {</p>
-        <p class="comment">//Returns the addition of a + b</p>
-        <p> console.log("hello, " + name)</p>
-        <p class="lastline">}</p>
-
-        <form class="example-form" action="">
-            <input type="text" placeholder="input: ">
-            <button type="submit">Submit</button>
-        </form>
-        <div class="answer-box">
-            <p class="answer" id="answer"></p>
+        <div class="example">
+            
+            <p class="comment">//we use the keyword "function" to initialize the object function and we pass or not, one or more arguments</p>
+            <pre>function greetings(name) {</pre>
+            <p class="comment">//Prints the greeting adding the variable "name"</p>
+            <pre>   console.log("hello, " + name)</pre>
+            <pre class="lastline">}</pre>
+    
+            <form class="example-form" action="">
+                <input type="text" placeholder="input: ">
+                <button type="submit">Submit</button>
+            </form>
+            <div class="answer-box">
+                <p class="answer" id="answer"></p>
+            </div>
+            
         </div>
-        
+        <div class="example">
+            
+            <p class="comment">//we use the keyword "function" to initialize the object function and we pass or not, one or more arguments</p>
+            <pre>function sum(a,b) {</pre>
+            <p class="comment">//Returns the addition of a + b</p>
+            <pre>   console.log("hello, " + name)</pre>
+            <pre class="lastline">}</pre>
+    
+            <form class="example-form" action="">
+                <input type="text" placeholder="input: ">
+                <button type="submit">Submit</button>
+            </form>
+            <div class="answer-box">
+                <p class="answer" id="answer"></p>
+            </div>
+            
+        </div>
+    
     </div>
+    <div class="container1">
+        <div class="text">
+            <h2>Function Expressions</h2>
+            <p>Similar to functions statements, with the diference that you can omit the name, it can be an anonymous function. They are generally invoked and used inmediatly, they run as soon as they are executed</p>
+            <p>Example: </p>
+        </div>
+        <div class="example">
+            
+            <pre>function main(n) {</pre>
+            <p class="comment">//We declare an unnamed function expression and we store it in a variable</p>
+            <pre>   var square = (x)=>{</pre>
+            <pre>       return x * x</pre>
+            <pre>   }</pre>
+            <p class="comment">//The function is invoked and used inmediatly, and prints the result</p>
+            <pre>   console.log(square(n))</pre>
+            <pre class="lastline">}</pre>
+    
+            <form class="example-form" action="">
+                <input type="text" placeholder="input: ">
+                <button type="submit">Submit</button>
+            </form>
+            <div class="answer-box">
+                <p class="answer" id="answer"></p>
+            </div>
+            
+        </div>
+        <div class="text">
+            <p>You can also name them</p>
+            <p>Example: </p>
+        </div>
+        <div class="example">
+            
+            <pre>function main(factN, fibN) {</pre>
+            <pre>   var math: {</pre>
+            <pre>       factorial:</pre>
+            <pre>           function factorial(n){</pre>
+            <pre>               if(n > 1) {</pre>
+            <pre>               return n * factorial(n-1)</pre>
+            <pre>           }</pre>
+            <pre>       }</pre>
+            <pre>   };</pre>
+            <pre>   var fib = function fibonacci(n) {</pre>
+            <pre>       if(n > 2){</pre>
+            <pre>           return fibonacci(n-1) + fibonacci(n-2)</pre>
+            <pre>       }</pre>
+            <pre>       else if( n < 1) {</pre>
+            <pre>           return 0</pre>
+            <pre>       }</pre>
+            <pre>       else{</pre>
+            <pre>           return 1</pre>
+            <pre>       }</pre>
+            <pre>   }</pre>
+            <pre>   console.log(math.factorial(factN))</pre>
+            <pre>   console.log(fib(fibN))</pre>
+            <pre>}</pre>
+    
+            <form class="example-form" action="">
+                <input type="text" placeholder="input: ">
+                <button type="submit">Submit</button>
+            </form>
+            <div class="answer-box">
+                <p class="answer" id="answer"></p>
+            </div>
+            
+        </div>
+    
+    </div>
+    
     
 </body>
 </html>
