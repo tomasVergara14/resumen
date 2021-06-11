@@ -82,3 +82,31 @@ a {
   margin: 1%;
   padding: 1%;
 }
+.example{
+  display: inline-block;
+  position: relative;
+  width: 80%;
+  left: 10%;
+  margin: 1%;
+  padding: 1%;
+  background-color: rgb(180, 178, 178);
+  border-radius: 2%;
+}
+.example p{
+  margin-bottom: 10%;
+}
+.comment{
+  color: rgba(206, 30, 30, 0.787);
+}
+.example-form{
+  display: flex;
+  flex-wrap: wrap;
+}
+.answer-box{
+  background-color: aliceblue;
+  width: 100%;
+  height: 8vh;
+  position: relative;
+  top: -40px;
+  border-radius: 2%;
+}
