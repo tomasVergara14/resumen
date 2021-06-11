@@ -4,7 +4,81 @@
 <%- include('./partials/header') %>
 
 <body>
-    <h2>HE wacho</h2>
+    <div class="container1">
+        <div class="text">
+            <h3>Variable Declaration Keywords</h3>
+            <h4>VAR</h4>
+            <p>You can use the keyword "var", to declare variables. The "scope" means where the variables are available for use</p>
+            <p>The var declarations are globally scoped or function locally scoped</p>
+            <p>If it´s declared outside a function block, it can be use inside of this function</p>
+            <p>Example: </p>
+        </div>
+        <div class="example">
+            
+            <pre>function main(input) {</pre>
+            
+            <pre>   var a = input</pre>
+            <p class="comment">//If the value of input % 2 == 1, we enter the if and add 1 to the value of a</p>
+            <pre>   if( a % 2 == 1){</pre>
+            <pre>       var a = input +  1</pre>
+            <pre>       console.log("if(a): " + a)</pre>
+            <pre>   }</pre>
+            <pre>   console.log("main (a): " + a)</pre>
+            <pre class="lastline">}</pre>
+            <form class="example-form" action="">
+                <input type="text" placeholder="input: ">
+                <button type="submit">Submit</button>
+            </form>
+            <div class="answer-box">
+                <p class="answer" id="answer"></p>
+            </div>
+            
+        </div>
+
+    </div>
+    <div class="container1">
+        <div class="text">
+            <h4>LET</h4>
+            <p>You can use the keyword "let", to declare variables.</p>
+            <p>The let declarations are locally scoped</p>
+            <p>If it´s declared outside a function block, it can´t be use inside of this function</p>
+            <p>Example: </p>
+        </div>
+        <div class="example">
+            
+            <pre>function main(input) {</pre>
+            
+            <pre>   let a = input</pre>
+            <p class="comment">//If the value of input % 2 == 1, we enter the if and add 1 to the value of a</p>
+            <pre>   if( a % 2 == 1){</pre>
+            <pre>       let a = input +  1</pre>
+            <pre>       console.log("if(a): " + a)</pre>
+            <pre>   }</pre>
+            <p class="comment">//Here you print the value of a inside the if block and the value of a outside of this, and prints a = input</p>
+            <pre>   console.log("main (a): " + a)</pre>
+            <pre class="lastline">}</pre>
+            <form class="example-form" action="">
+                <input type="text" placeholder="input: ">
+                <button type="submit">Submit</button>
+            </form>
+            <div class="answer-box">
+                <p class="answer" id="answer"></p>
+            </div>
+            
+        </div>
+
+    </div>
+    <div class="container1">
+        <div class="text">
+            <h4>CONST</h4>
+            <p>You can use the keyword "CONST", to declare constants. The value of a const never change, it can´t be reassigned.</p>
+            <p>They must always be initialized, assign them a value, if it does not return "error"</p>
+            <p>The scope is similar to the let variables, they can only be accessed within the block they were declared</p>
+            
+        </div>
+
+
+    </div>
 </body>
 
 <%- include('./partials/footer') %>
