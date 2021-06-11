@@ -1,11 +1,42 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
+
+<%- include('./partials/head') %>
+
+<%- include('./partials/header') %>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <div class="body-box">
+      <p>Welcome to <%= title %>!!</p>
+      <p>Let´s learn together 🐵🐵🐵</p>  
+    </div>
+    <div class="body-box-link"> 
+      <a href="/functions">Functions</a>
+    </div>
+    <div class="body-box-link"> 
+      <a href="">Let & Const</a>
+    </div>
+    <div class="body-box-link"> 
+      <a href="">Operators</a>
+    </div>
+    <div class="body-box-link"> 
+      <a href="">Conditionals</a>
+    </div>
+    <div class="body-box-link"> 
+      <a href="">Falsy Values</a>
+    </div>
+    <div class="body-box-link"> 
+      <a href="">Switch</a>
+    </div>
+    <div class="body-box-link"> 
+      <a href="">Strings</a>
+    </div>
+    <div class="body-box-link"> 
+      <a href="">Loops</a>
+    </div>
+    <div class="body-box-link"> 
+      <a href="">Arrays</a>
+    </div>
+    
   </body>
 </html>
+
+
+<%- include('./partials/footer') %>
