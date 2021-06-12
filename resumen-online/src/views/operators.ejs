@@ -1,0 +1,169 @@
+<%- include('./partials/head') %>
+<%- include('./partials/header') %>
+<body>
+    <div class="container1">
+        <div class="text">
+            <h3>EQUALITY OPERATORS</h3>
+            <h4>Equality ( == )</h4>
+            <p>The equality operator is a binary operator that compares 2 operands, returning "true" if they are equal</p>
+            <p>It works by converting the operands, if they are not the same type of data ("2"-string & 2-number)</p>
+            <p>And then using a strict comparison between the operands.</p>
+            <p>Example: </p>
+        </div>
+        <div class="example">
+            
+            <p class="comment">//true</p>
+            <pre>1 == 1 </pre>
+            <p class="comment">//true</p>
+            <pre>1 == "1"</pre>
+            <p class="comment">//true</p>
+            <pre>"1" == 1  </pre>
+            <p class="comment">//true</p>
+            <pre>0 == false</pre>
+            <p class="comment">//false</p>
+            <pre>0 == null </pre>
+            <p class="comment">//false</p>
+            <pre>0 != undefined</pre>
+            <p class="comment">//true</p>
+            <pre>null == undefined</pre>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="text">
+            
+            <h4>Inequality ( != )</h4>
+            <p>The inequality operator is a binary operator that compares 2 operands, returning "true" if they are not equal</p>
+            <p>It works by converting the operands, if they are not the same type of data ("2"-string & 2-number)</p>
+            <p>And then using a strict comparison between the operands.</p>
+            <p>Example: </p>
+        </div>
+        <div class="example">
+            
+            <p class="comment">//false</p>
+            <pre>1 != 1  </pre>
+            <p class="comment">//false</p>
+            <pre>1 != "1"</pre>
+            <p class="comment">//false</p>
+            <pre>"1" != 1  </pre>
+            <p class="comment">//false</p>
+            <pre>0 != false</pre>
+            <p class="comment">//true</p>
+            <pre>0 != null </pre>
+            <p class="comment">//true</p>
+            <pre>0 != undefined</pre>
+            <p class="comment">//false</p>
+            <pre>null != undefined</pre>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="text">
+            
+            <h4>Identity or Strict Equality ( === )</h4>
+            <p>The identity operator returns true if both condition are met: </p>
+            <pre> - The operands are strictly the same</pre>
+            <pre> - The operands are the same data type</pre>
+            <p>Example: </p>
+        </div>
+        <div class="example">
+            
+            <p class="comment">//true</p>
+            <pre>1 === 1  </pre>
+            <p class="comment">//false</p>
+            <pre>1 === "1"</pre>
+            <p class="comment">//false</p>
+            <pre>"1" === 1  </pre>
+            <p class="comment">//false</p>
+            <pre>0 === false</pre>
+            <p class="comment">//false</p>
+            <pre>0 === null </pre>
+            <p class="comment">//false</p>
+            <pre>0 === undefined</pre>
+            <p class="comment">//false</p>
+            <pre>null === undefined</pre>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="text">
+            
+            <h4>Non Identity or Strict Inequality ( !== )</h4>
+            <p>The non-identity operator returns true if both condition are met: </p>
+            <pre> - The operands are not the same</pre>
+            <pre> - The operands are not the same data type</pre>
+            <p>Example: </p>
+        </div>
+        <div class="example">
+            
+            <p class="comment">//false</p>
+            <pre>1 !== 1  </pre>
+            <p class="comment">//true</p>
+            <pre>1 !== "1"</pre>
+            <p class="comment">//true</p>
+            <pre>"1" !== 1  </pre>
+            <p class="comment">//true</p>
+            <pre>0 !== false</pre>
+            <p class="comment">//true</p>
+            <pre>0 !== null </pre>
+            <p class="comment">//true</p>
+            <pre>0 !== undefined</pre>
+            <p class="comment">//true</p>
+            <pre>null !== undefined</pre>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="text">
+            <h3>RELATIONAL OPERATORS</h3>
+            <h4>Greater than ( > )</h4>
+            <p>A binary operator that returns true if the left operand is greater than the right operand.</p>
+    </div>
+    <div class="container1">
+        <div class="text">
+            <h4>Greater than or equal ( >= )</h4>
+            <p>A binary operator that returns true if the left operand is greater or equal than the right operand.</p>
+    </div>
+    <div class="container1">
+        <div class="text">
+            <h4>Less than ( < )</h4>
+            <p>A binary operator that returns true if the left operand is less than the right operand.</p>
+    </div>
+    <div class="container1">
+        <div class="text">
+            <h4>Less than or equal ( <= )</h4>
+            <p>A binary operator that returns true if the left operand is less or equal than the right operand.</p>
+    </div>
+    <div class="container1">
+        <div class="text">
+            <h3>LOGICAL OPERATORS</h3>
+            <h4>Logical And ( && )</h4>
+            <p>Use: "Expression1" && "Expression2" </p>
+            <p>If both expression are true, returns "true".</p>
+    </div>
+    <div class="container1">
+        <div class="text">
+            <h4>Logical Or ( || ) </h4>
+            <p>Use: "Expression1" || "Expression2" </p>
+            <p>If both expressions are false, returns false, but if either is true, returns "true". </p>
+    </div>
+    <div class="container1">
+        <div class="text">
+            <h4>Logical Not ( ! ) </h4>
+            <p>Use: !"Expression1"  </p>
+            <p>If the expression itself is false, returns false, otherwise it is true. </p>
+            <p>Example: </p>
+        </div>
+        <div class="example">
+            
+            <p class="comment">//true</p>
+            <p>console.log(( 5 < 7 ) && ( 1 < 3 ))  </p>
+            <p class="comment">//false</p>
+            <p>console.log(( 5 < 5 ) && ( 1 < 3 ))</p>
+            <p class="comment">//true</p>
+            <p>console.log((5 < 7 ) || ( 1 < 3))</p>
+            <p class="comment">//true</p>
+            <p>console.log((5 < 5 ) || ( 1 < 3))</p>
+            <p class="comment">//false</p>
+            <p>console.log(!(2*3))</p>
+            
+        </div>
+    </div>
+</body>
+<%- include('./partials/footer') %>
