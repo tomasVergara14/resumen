@@ -10,6 +10,7 @@ var functionsRouter = require('./routes/functions')
 var letConstRouter = require('./routes/letConst')
 var operatorsRouter = require('./routes/operators')
 var conditionalsRouter = require('./routes/conditionals')
+var falsyRouter = require('./routes/falsy')
 
 var app = express();
 
@@ -29,6 +30,7 @@ app.use('/functions', functionsRouter)
 app.use('/letconst', letConstRouter)
 app.use('/operators', operatorsRouter)
 app.use('/conditionals', conditionalsRouter)
+app.use('/falsy', falsyRouter)
 
 
 // catch 404 and forward to error handler
