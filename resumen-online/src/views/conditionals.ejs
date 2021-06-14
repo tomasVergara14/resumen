@@ -1,0 +1,57 @@
+<%- include('./partials/head') %>
+<%- include('./partials/header') %>
+
+<body>
+    <div class="container1">
+        <div class="text">
+            <h3>IF-ELSE STATEMENTS  </h3>
+            <p>The "if" is used to execute a statement if a logical condition is true</p>
+            <p>The "else" is used to execute a statement, in the case that the condition that the "if" check, is false. Its ñike a default value</p>
+            <p>We can add the "else-if", that executes a code, after checking a logical condition</p>
+            <p>Example: </p>
+        </div>
+        <div class="example">
+            
+            <pre>if( condicion ){</pre>
+            <p class="comment" >//code that executes if the logical conditions is true</p>
+            <pre>   }</pre>
+            <pre>else if( condition ){</pre>
+            <p class="comment" >//code that executes if the logical condition is true</p>
+            <pre>   }</pre>
+            <pre>else{</pre>
+            <p class="comment" >//code that executes if the logical conditions are false</p>
+            <pre class="lastline">}</pre>
+    
+            
+        </div>
+        <div class="container1">
+            <div class="text">
+                <h3>Conditional Ternary Operator  </h3>
+                <p>The ternary Conditional Operator is the only operator in JS that takes 3 operands, and is used a short form of if-else</p>
+                <p>Sintax: </p>
+                <pre>       condition ? trueStatement : falseStatement</pre>  
+                <p>Example:</p>
+            </div>
+            <div class="example">
+                
+          
+                
+                <pre>function main ( input ){</pre>
+                <p class="comment" >//Example 1</p>
+                <pre>   input % 2 == 0 ? console.log(input + " is Even") : </pre>
+                <pre>    console.log( input + " is ODD")</pre>
+                
+                <p class="comment" >//Example 2</p>
+                <pre>   console.log(input + " is " ((input % 2 ==0) ? </pre>
+                <pre>    "Even" : "Odd" ))</pre>
+                
+                <p class="comment" >//Example 3</p>
+                <pre>   var parity = input input % 2 == 0 ? "Even" : "Odd"</pre>
+                <pre>   console.log(input + " is " + parity) </pre>
+                <pre class="lastline">}</pre>
+        
+                
+            </div>
+</body>
+
+<%- include('./partials/footer') %>
