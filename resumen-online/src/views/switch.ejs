@@ -1,0 +1,126 @@
+<%- include('./partials/head') %>
+<%- include('./partials/header') %>
+<body>
+    <div class="container1">
+        <div class="text">
+            <h3>Switch</h3>
+            <p>The switch statement evaluates an expression looking for a match between "expression" and "case label"</p>
+            <p>If there is a match the program jumps to the associated expression and executes its code</p>
+            <p>We need to add a call to "break", if we don´t it will continue to check all "case labels" </p>
+            <p>Example:</p>
+        </div>
+        <div class="example">
+            
+      
+            
+            <pre>switch (expresion){</pre>
+            <p class="comment" >//looking for a match in case label 1</p>
+            <pre>   case label:</pre>
+            <pre>       statement1;</pre>
+            <pre>       break;</pre>
+            
+            <p class="comment" >//looking for a match in case label 2</p>
+            <pre>   case label2:</pre>
+            <pre>       statement1;</pre>
+            <pre>       break;</pre>
+            
+            <p class="comment" >//looking for a match in case label 3 </p>
+            <pre>   case label3:</pre>
+            <pre>       statement1;</pre>
+            <pre>       break;</pre>
+
+            <p class="comment" >//If there is no match, it will execute the default statement</p>
+            <pre>   default</pre>
+            <pre>       statement1;</pre>
+
+            <pre>}</pre>
+        </div>
+        <div class="text">
+            <p>The The program checks between "case label" and "expressions", if it finds a match execute the statement associated</p>
+            <p>The default goes to the end, since its check sequentially, and if its first it will be executed</p>
+        </div>    
+    </div>
+    <div class="container1">
+        <div class="text">
+            <h3>Break statement</h3>
+            <p>It is optional, but it is common to see one right after a "label case". That way you make sure the program stops once it finds a match.</p>
+            <p>If it is not declared, the code block of the match will be executed and the next one too</p>
+            <p>Example:</p>
+        </div>
+        <div class="example">
+            
+      
+            
+            <pre>function switchDemo (n) {</pre>
+            <pre>   switch (n) {</pre>
+            <pre>       case 2:</pre>
+            <pre>           console.log('a')</pre>
+            <pre>           break;</pre>
+            
+            
+            <pre>       case 3:</pre>
+            <pre>           console.log('b')</pre>
+            <pre>           break;</pre>
+            
+            
+            <pre>       case 4:</pre>
+            <pre>           console.log('c')</pre>
+            <pre>           break;</pre>
+            
+            
+            <pre>       default</pre>
+            <pre>           console.log('d');</pre>
+
+            <pre>}</pre>
+            <form class="example-form" action="">
+                <input type="text" placeholder="input: ">
+                <button type="submit">Submit</button>
+            </form>
+            <div class="answer-box">
+                <p class="answer" id="answer"></p>
+            </div>
+        </div>
+          
+    </div>
+    <div class="container1">
+        <div class="text">
+            <h3>Multicriteria values</h3>
+            <p>Example:</p>
+        </div>
+        <div class="example">
+            
+      
+            
+            <pre>function multicriteria(n){</pre>
+            <pre>   switch (n) {</pre>
+            <pre>       case 2:</pre>
+            <pre>       case 4:</pre>
+            <pre>       case 6:</pre>
+            <pre>           console.log('a')</pre>
+            <pre>           break;</pre>
+            
+            
+            <pre>       case 3:</pre>
+            <pre>       case 5:</pre>
+            <pre>       case 7:</pre>
+            <pre>           console.log('b')</pre>
+            <pre>           break;</pre>
+            
+            
+            <pre>       default</pre>
+            <pre>           console.log('c');</pre>
+
+            <pre>}</pre>
+            <form class="example-form" action="">
+                <input type="text" placeholder="input: ">
+                <button type="submit">Submit</button>
+            </form>
+            <div class="answer-box">
+                <p class="answer" id="answer"></p>
+            </div>
+        </div>
+          
+    </div>
+</body>
+
+<%- include('./partials/footer') %>
