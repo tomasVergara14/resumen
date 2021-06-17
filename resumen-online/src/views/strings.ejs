@@ -1,0 +1,98 @@
+
+<%- include('./partials/head') %>
+<%- include('./partials/header') %>
+
+<body>
+    <div class="container1">
+        <div class="text">
+            <h3>JavaScript Strings</h3>
+            <p>They are chains of zero or more characters that represent texts (They can be letters, digits and punctuation marks)</p>
+            <p>Are denoted as text strings, because they are enclosed by '' or "". </p>
+            <p>Each string has a property called ".length" that the length or number of characters in that text string. </p>
+            <p>Example:</p>
+        </div>
+        <div class="example">
+            
+      
+            
+            <pre>var s = "hello."  </pre>
+            <p class="comment" >// It returns 6</p>
+            <pre>console.log(s.length)       </pre>
+            
+            
+        </div>
+    </div>
+    <div class="container1">
+        <div class="text">
+            <h3>String Constructor</h3>
+            <p>To create a new string we use the sintax "String(value)" where value is the data that we want to convert into a string </p>
+            <p>With "typeof" we can see what type of data it is. </p>
+            <p>Example:</p>
+        </div>
+        <div class="example">    
+            <pre>var myNumber = 4;  </pre>
+            <p class="comment" >// It returns 4 is a number</p>
+            <pre>console.log( myNumber + " is a " + typeof myNumber)</pre>
+            
+            <pre>var myString = String(myNumber);</pre>
+            <p class="comment" >// It returns  4 is a string</p>
+            <pre>console.log( myNumber + " is a " + typeof myString)      </pre>
+            
+        </div>
+    </div>
+    <div class="container1">
+        <div class="text">
+            <h3>Methods</h3>
+            <h4>String.charAt ()</h4>
+            <p>Returns the character indicated in the index </p>
+            <p>Example:</p>
+        </div>
+        <div class="example">    
+            <pre>var s = "hackerrank"; </pre>
+            <pre>var i = 3 </pre>
+            <p class="comment" >// returns "k"</p>
+            <pre>console.log(s.charAt(i))</pre>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="text">
+            <h4>String.concat ()</h4>
+            <p>Returns a new string that concatenates a string plus the string that we pass as an argument </p>
+            <p>Example:</p>
+        </div>
+        <div class="example">    
+            <pre>var s = "Hacker"; </pre>
+            <pre>var t = "rank";</pre>
+            <pre>var u = s.concat(t)</pre>
+            <p class="comment" >// returns "Hacker rank"</p>
+            <pre>console.log(s + " " + t)</pre>
+            <p class="comment" >// returns "Hackerrank"</p>
+            <pre>console.log(u) </pre>
+        </div>
+    </div><div class="container1">
+        <div class="text">
+            <h4>String.includes ()</h4>
+            <p>Returns a boolean denoting wheter or not a string has the argument whitin this string </p>
+            <p>Example:</p>
+        </div>
+        <div class="example">    
+            <pre>var s = "hackerrank"; </pre>
+            <p class="comment" >// returns "true" and "false" because it posees "h" but not "H" </p>
+            <pre>console.log(s.includes("h") + " " + s.includes("H"))</pre>
+        </div>
+    </div>
+</div><div class="container1">
+    <div class="text">
+        <h4>String.endsWith () </h4>
+        <p>Returns a boolean denoting if a string ends with the character that we pass as an argument</p>
+        <p>Example:</p>
+    </div>
+    <div class="example">    
+        <pre>var s = "hackerrank"; </pre>
+        <p class="comment" >// returns "true" and "false" because it ends with ("k") but not "K" </p>
+        <pre>console.log( s.endsWith("k") + " " + s.endsWith("K"))</pre>
+    </div>
+</div>
+</body>
+
+<%- include('./partials/footer') %>
