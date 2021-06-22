@@ -13,6 +13,7 @@ var conditionalsRouter = require('./routes/conditionals')
 var falsyRouter = require('./routes/falsy')
 var switchRouter = require('./routes/switch')
 var stringsRouter = require('./routes/strings')
+var loopsRouter = require('./routes/loops')
 
 var app = express();
 
@@ -35,7 +36,7 @@ app.use('/conditionals', conditionalsRouter)
 app.use('/falsy', falsyRouter)
 app.use('/switch', switchRouter)
 app.use('/strings', stringsRouter)
-
+app.use('/loops', loopsRouter)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
