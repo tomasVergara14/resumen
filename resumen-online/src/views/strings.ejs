@@ -69,7 +69,8 @@
             <p class="comment" >// returns "Hackerrank"</p>
             <pre>console.log(u) </pre>
         </div>
-    </div><div class="container1">
+    </div>
+    <div class="container1">
         <div class="text">
             <h4>String.includes ()</h4>
             <p>Returns a boolean denoting wheter or not a string has the argument whitin this string </p>
@@ -81,18 +82,209 @@
             <pre>console.log(s.includes("h") + " " + s.includes("H"))</pre>
         </div>
     </div>
-</div><div class="container1">
-    <div class="text">
-        <h4>String.endsWith () </h4>
-        <p>Returns a boolean denoting if a string ends with the character that we pass as an argument</p>
-        <p>Example:</p>
+    <div class="container1">
+        <div class="text">
+            <h4>String.endsWith () </h4>
+            <p>Returns a boolean denoting if a string ends with the character that we pass as an argument</p>
+            <p>Example:</p>
+        </div>
+        <div class="example">    
+            <pre>var s = "hackerrank"; </pre>
+            <p class="comment" >// returns "true" and "false" because it ends with ("k") but not "K" </p>
+            <pre>console.log( s.endsWith("k") + " " + s.endsWith("K"))</pre>
+        </div>
     </div>
-    <div class="example">    
-        <pre>var s = "hackerrank"; </pre>
-        <p class="comment" >// returns "true" and "false" because it ends with ("k") but not "K" </p>
-        <pre>console.log( s.endsWith("k") + " " + s.endsWith("K"))</pre>
+    <div class="container1">
+        <div class="text">
+            <h4>String.indexOf () </h4>
+            <p>Returns an integer denoting the index of the first result obtained, of the character that is pass as an argument </p>
+            <p>If the character is not found, it returns -1 </p>
+            <p>If an integer is passed as the second argument, it will start looping through the string from the value, and return the index of the character if it finds it </p>
+            <p>Example:</p>
+        </div>
+        <div class="example">    
+            <pre>var s = "hackerrank"; </pre>
+            <p class="comment" >// returns 1 because it is in the position 1 </p>
+            <pre>console.log( s.indexOf("a"))</pre>
+            <p class="comment" >// returns -1 because it is not found </p>
+            <pre>console.log( s.indexOf(10))</pre>
+            <p class="comment" >// returns -1 because it is not found "a" after the index 10 </p>
+            <pre>console.log( s.indexOf("a", s.length))</pre>
+            <p class="comment" >// returns 7 because its the position where we can find "a" after the index 6 </p>
+            <pre>console.log( s.includes("a", 6))</pre>
+        </div>
     </div>
-</div>
+
+    <div class="container1">
+        <div class="text">
+            <h4>String.lastIndexOf () </h4>
+            <p>Returns an integer denoting the index of the first result obtained, of the character that is pass as an argument.</p>
+            <p>If the character is not found, it returns -1 </p>
+            <p>If an integer is passed as the second argument, it will start looping through the string from the value, and return the index of the character if it finds it </p>
+            <p>Example:</p>
+        </div>
+        <div class="example">    
+            <pre>var s = "hackerrank"; </pre>
+            <p class="comment" >// returns 7 because it is in the position 7 </p>
+            <pre>console.log( s.lastIndexOf("a"))</pre>
+            <p class="comment" >// returns -1 because it is not found </p>
+            <pre>console.log( s.lastIndexOf(10))</pre>
+            <p class="comment" >// returns 7 because it is found "a" after the index 10 </p>
+            <pre>console.log( s.lastIndexOf("a", s.length))</pre>
+            <p class="comment" >// returns 1 because its the position where we can find "a" after the index 6 </p>
+            <pre>console.log( s.lastIndexOf("a", 6))</pre>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="text">
+            <h4>String.match () </h4>
+            <p>Matches a regular expression passed as an argument, in a string. If there is a match, it returns an object with 3 propierties</p>
+            <p>First: The part of the text string that match</p>
+            <p>Second: The index where is the found the match </p>
+            <p>Third: The input, the initial string that was passed </p>
+            <p>If there is no match, it returns null</p>
+            <p>Example:</p>
+        </div>
+        <div class="example">    
+            <pre>var s = "HackerRank"; </pre>
+            <p class="comment" >// This is a regular expression, returns "acker", index: 1,input: 'HackerRank'" </p>
+            <pre>console.log(s.match("[a-z]+"))</pre>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="text">
+            <h4>String.repeat () </h4>
+            <p>Returns a string that is made up of the same element as the string that we pass as an object.</p>
+            <p>Its repeat a number of times that we indicate (an integer is passed as a parameter) </p>
+            <p>If there is parameter, it returns an empty string</p>
+            <p>Example:</p>
+        </div>
+        <div class="example">    
+            <pre>var s = "HackerRank"; </pre>
+            <p class="comment" >// returns x</p>
+            <pre>console.log(s.repeat() + "x" + s.repeat(0))</pre>
+            <p class="comment" >// returns HackerRankHackerRank</p>
+            <pre>console.log(s.repeat(2))</pre>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="text">
+            <h4>String.replace () </h4>
+            <p>Finds a match between a regular expression and a string, then returns a string where the fist match is replace by the argument we pass </p>
+            <p>If there is no match, returns the original string </p>
+            <p>It uses two arguments: </p>
+            <p>First: the character/characters we are looking for</p>
+            <p>Second: What we want to replace it with</p>
+            <p>Example:</p>
+        </div>
+        <div class="example">    
+            <pre>var s = "HackerRank"; </pre>
+            <p class="comment" >// returns "HackerRank" and "HeckerRank"</p>
+            <pre>console.log( s.replace() + " " + s.replace("a", "e"))</pre>
+
+        </div>
+    </div>
+    <div class="container1">
+        <div class="text">
+            <h4>Strings.search () </h4>
+            <p>Performs a search between a regular expression and one or more characters in the string that we pass</p>
+            <p>Returns the index where it is found</p>
+            <p>Example:</p>
+        </div>
+        <div class="example">    
+            <pre>var s = "HackerRank"; </pre>
+            <p class="comment" >// returns 0 and 1 because, the first search does not have an argument, and the second is in the index 1</p>
+            <pre>console.log( s.search() + " " + s.search("[a-z]"))</pre>
+            <p class="comment" >// returns 1 and 7 </p>
+            <pre>console.log(s.search("a") + " " + s.search("an"))</pre>
+
+
+        </div>
+    </div>
+    <div class="container1">
+        <div class="text">
+            <h4>String.slice () </h4>
+            <p>Extracts a section from a string and returns that section as a new string . If no arguments are passed, returns the same string</p>
+            <p>If only an integer is passed as an argument, it returns a string from that index to the end of the string. If two are passed to it, the first index is where the cut begins, and the second is up to where  </p>
+            <p>Example:</p>
+        </div>
+        <div class="example">    
+            <pre>var s = "HackerRank"; </pre>
+            <p class="comment" >// returns "HackerRank" and rank</p>
+            <pre>console.log(s.slice() + " " + s.slice(6))</pre>
+            <p class="comment" >// returns acker</p>
+            <pre>console.log(s.slice(1,6))</pre>
+
+
+        </div>
+    </div>
+    <div class="container1">
+        <div class="text">
+            <h4>String.split () </h4>
+            <p>If an argument is not passed, it returns the string as an array object</p>
+            <p>If an empty string is passed to it, ir divides the string into each character, forming an array of its characters</p>
+            <p>If a character is passed as an argument , it divides the string into substrings, breaking where there is a match </p>
+            <p>Example:</p>
+        </div>
+        <div class="example">    
+            <pre>var s = "HackerRank"; </pre>
+            <p class="comment" >// returns "HackerRank"</p>
+            <pre>console.log(s.split())</pre>
+            <p class="comment" >// returns ['h', 'a', 'c', 'k','e', 'r', 'r', 'a','n', 'k']</p>
+            <pre>console.log(s.split(""))</pre>
+            <p class="comment" >// returns "Hac", "erran", ""]</p>
+            <pre>console.log(s.split("k"))</pre>
+
+
+        </div>
+    </div>
+    <div class="container1">
+        <div class="text">
+            <h4>String.toLowerCase () </h4>
+            <p>Returns the value of that string, converted to lowercase </p>
+            <p>Example:</p>
+        </div>
+        <div class="example">    
+            <pre>var s = "HackerRank"; </pre>
+            <p class="comment" >// returns "hackerrank"</p>
+            <pre>l = s.toLowerCase()</pre>
+            <pre>console.log(l)</pre>
+            
+
+        </div>
+    </div>
+    <div class="container1">
+        <div class="text">
+            <h4> String.toUpperCase () </h4>
+            <p>Returns the value of that string, converted to uppercase </p>
+            <p>Example:</p>
+        </div>
+        <div class="example">    
+            <pre>var s = "HackerRank"; </pre>
+            <p class="comment" >// returns "HACKERRANK"</p>
+            <pre>l = s.toUpperCase()</pre>
+            <pre>console.log(l)</pre>
+            
+
+        </div>
+    </div>
+    <div class="container1">
+        <div class="text">
+            <h4> String.trim () </h4>
+            <p>Returns the original string, without the blanks at the beginning and at the end </p>
+            <p>Example:</p>
+        </div>
+        <div class="example">    
+            <pre>var s = "     hackerrank    " ; </pre>
+            <p class="comment" >// returns "original length:19"</p>
+            <pre>console.log("original length: " + s.length )</pre>
+            <p class="comment" >// returns "trim length:10"</p>
+            <pre>t = s.trim()</pre>
+            <pre>console.log("trim length: " + t.length )</pre>
+            
+
+        </div>
+    </div>
 </body>
 
 <%- include('./partials/footer') %>
