@@ -57,16 +57,33 @@
     </div>
     <div class="container1">
         <div class="text">
-            <h4>- for </h4>
-            <p>The for statement creates a loop consisting of 3 optional expressions, enclosed in parentheses and separated by ";"  </p>
-            <p>followed by a statement to be executed in a loop</p>
+            <h4>- while </h4>
+            <p>The while statement creates a loop that executes its internal statement, as long as the specified condition is met, the condition is always evaluated prior to each turn.   </p>
             <p>Example:</p>
         </div>
         <div class="example">    
-            <pre>for( initialization; condition; finalExpression) { </pre>
+            <pre> while (condition) {</pre>
             <p class="comment" >// the statement to be executed in every loop</p>
             <pre> statement(s);</pre>
             <pre>}</pre>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="text">
+            <h4>Components</h4>
+            <p>- Condition: If the expression returns true, it will be executed the statement, otherwise jumps to the next line of code</p>
+            <p>- Statement: The code that will be executed when the condition returns true. </p>
+        </div>
+        <div class="example">
+            <pre>function print (input){</pre>    
+            <pre>    var i = 1;</pre>
+            <pre>    while( i <= input){</pre>
+            <pre>       console.log("i equals = " + i)</pre>
+            <pre>    i++</pre>
+            <p class="comment" >// this line indicates that it will be increasing the value by one by one</p>
+            <pre>   }</pre>
+            <pre>}</pre>
+            <pre>print(4)</pre>
         </div>
     </div>
 </body>
