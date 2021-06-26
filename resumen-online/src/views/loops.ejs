@@ -118,6 +118,48 @@
             <pre>print(4)</pre>
         </div>
     </div>
+    <div class="container1">
+        <div class="text">
+            <h4>- for-in </h4>
+            <p>This loop iterates over the name of each property in an object, allowing the statements to be executed on each property </p>
+            <p>Example:</p>
+        </div>
+        <div class="example">    
+            <pre> for (var variable in object) {</pre>
+            <p class="comment" >// The statement to be executed in each property</p>
+            <pre> statement;</pre>
+            <pre> }</pre>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="text">
+            <h4>Components</h4>
+            <p>- Variable: A variable that refers different property names in each iteration of the loop</p>
+            <p>- Object: The object over which it is iterating  </p>
+        </div>
+        <div class="example">
+            <pre>var actress = {</pre>    
+            <pre>    firstName: "julia",</pre>
+            <pre>    lastName: "Roberts",</pre>
+            <pre>    age: 33,</pre>
+            <pre>    nationality: "yankee"</pre>
+            <pre>}</pre>
+            <pre>for (var propiedad in actress) {</pre>
+            <pre>    console.log("actress." + propiedad + 
+
+                " = " actress[propiedad])</pre>
+            <pre>}</pre>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="text">
+            <p>prints:</p>
+            <p>-  actress.firstName = Julia</p>
+            <p>-  actress.lastName = Roberts</p>
+            <p>-  actress.age = 33</p>
+            <p>-  actress.nationality = yankee</p>
+        </div>
+    </div>
 </body>
 
 <%- include('./partials/footer') %>
