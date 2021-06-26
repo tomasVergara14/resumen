@@ -160,6 +160,71 @@
             <p>-  actress.nationality = yankee</p>
         </div>
     </div>
+    <div class="container1">
+        <div class="text">
+            <h4>- for-of </h4>
+            <p>In this loop, iterable objects are iterated, such as: arrays, map, set, strings, objects.</p>
+            <p>Iterate over the value of each distinct property in the structure, such as a letter in a string, or each element in an array.</p>
+            <p>Example:</p>
+        </div>
+        <div class="example">    
+            <pre> for( let variable of iterable) {</pre>
+            <p class="comment" >// the statement to be executed in every loop</p>
+            <pre> statement;</pre>
+            <pre>}</pre>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="text">
+            <h4>Components</h4>
+            <p>- Variable: refers to the value of the property in each iteration of the loop </p>
+            <p>- Object: The object over which it is iterating  </p>
+        </div>
+        <div class="example">
+            <pre>function split (input) {</pre>    
+            <pre>    var separador = " "</pre>
+            <pre>    var array = input.split(separador)</pre>
+            <p class="comment" >//Shows the result</p>
+            <pre>    console.log(array) </pre>
+            <pre>    for ( value of array ) {</pre>
+            <p class="comment" >// Prints each one separately</p>
+            <pre>       console.log( value)</pre>
+            <pre>   }</pre>
+            <pre>}</pre>
+            <pre>print(4)</pre>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="text">
+            <p>You can also do it with map.</p>
+            <p>Example:</p>
+        </div>
+        <div class="example">    
+            <pre> let actress = new Map([</pre>
+            <pre>   ["firstName", "Julia"],</pre>
+            <pre>   ["lastName", "Roberts"],</pre>
+            <pre>   ["age", 33],</pre>
+            <pre>   ["nationality", "yankee"],</pre>
+            <pre> ])</pre>
+            <pre> for (let info of actress) {</pre>
+            <p class="comment">//Prints key:value</p>
+            <pre>   console.log(info)</pre>
+            <pre>}</pre>
+            <pre> for (let info of actress) {</pre>
+            <p class="comment">individually print each key:value</p>
+            <pre>   console.log( info[0] + ": " + info[1] )</pre>
+            <pre>}</pre>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="text">
+            <p>prints:</p>
+            <p>-  firstName : Julia</p>
+            <p>-  lastName : Roberts</p>
+            <p>-  age : 33</p>
+            <p>-  nationality : yankee</p>
+        </div>
+    </div>
 </body>
 
 <%- include('./partials/footer') %>
