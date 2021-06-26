@@ -1,7 +1,74 @@
 <%- include('./partials/head') %>
 <%- include('./partials/header') %>
 <body>
-    <h1>hehe</h1>
+    <div class="container1">
+        <div class="text">
+            <h3>JavaScript Loops  </h3>
+            <p>They are a simple and fast way to repeat a series of instructions, and they are run a finite number of times</p>
+            <p>JavaScript has different forms of loops: </p>
+            <ul>
+                <li id="for" class="for">for</li>
+                <li id="while" class="while">while</li>
+                <li id="do-while" class="do-while">do-while</li>
+                <li id="for-in" class="for-in">for-in</li>
+                <li id="for-of" class="for-of">for-of</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="text">
+            <h4>- for </h4>
+            <p>The for statement creates a loop consisting of 3 optional expressions, enclosed in parentheses and separated by ";"  </p>
+            <p>followed by a statement to be executed in a loop</p>
+            <p>Example:</p>
+        </div>
+        <div class="example">    
+            <pre>for( initialization; condition; finalExpression) { </pre>
+            <p class="comment" >// the statement to be executed in every loop</p>
+            <pre> statement(s);</pre>
+            <pre>}</pre>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="text">
+            <h4>Components</h4>
+            <p>- Initialization: an expression or variable typically used to initializate a countable variable </p>
+            <p>- Condition: this is the termination condition , which is evaluated before starting a new loop. If the condition is met, the statement is executed. If the condition is not met, it will execute the following line after the loop. If it is not present the condition, it is always executed</p>
+            <p>- Final Expression: Its an expression that will be evaluated at the end of each turn of the loop, increasing or decreasing. This occurs prior to the new evaluation of the condition in the new round</p>
+            <p>- Statement: The code that will be executed when the condition returns true. </p>
+        </div>
+    
+        <div class="example">    
+            <pre>for( let i = 0; i < input ; i++ ) {</pre>
+            <p class="comment" >// Where the laps starts at 0</p>
+            <p class="comment" >// the condition - it will be executed as long as i is less than input</p>
+            <p class="comment" >// It will increase the number of laps from 1 to 1</p>
+            <pre> statement(s);</pre>
+            <pre>}</pre>
+        </div>
+        <div class="example">
+            <pre>function print (n){</pre>    
+            <pre>   for( let i = 0; i < input ; i++ ) {</pre>
+            <pre>       console.log("i equals = " + i)</pre>
+            <pre>   }</pre>
+            <pre>}</pre>
+            <pre>print(4)</pre>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="text">
+            <h4>- for </h4>
+            <p>The for statement creates a loop consisting of 3 optional expressions, enclosed in parentheses and separated by ";"  </p>
+            <p>followed by a statement to be executed in a loop</p>
+            <p>Example:</p>
+        </div>
+        <div class="example">    
+            <pre>for( initialization; condition; finalExpression) { </pre>
+            <p class="comment" >// the statement to be executed in every loop</p>
+            <pre> statement(s);</pre>
+            <pre>}</pre>
+        </div>
+    </div>
 </body>
 
 <%- include('./partials/footer') %>
