@@ -14,6 +14,7 @@ var falsyRouter = require('./routes/falsy')
 var switchRouter = require('./routes/switch')
 var stringsRouter = require('./routes/strings')
 var loopsRouter = require('./routes/loops')
+var arraysRouter = require('./routes/array')
 
 var app = express();
 
@@ -37,6 +38,7 @@ app.use('/falsy', falsyRouter)
 app.use('/switch', switchRouter)
 app.use('/strings', stringsRouter)
 app.use('/loops', loopsRouter)
+app.use('/arrays', arraysRouter)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
